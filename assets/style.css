@@ -1,0 +1,183 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    background-image: url(./body-background.jpg);
+    background-size: 200%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Background image kept constant to keep with flow of page. */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    background-image: url(./background1.jpg);
+    background-size: 100%;
+    background-position-y: 75%;
+    border-radius: 7%;
+    border-style: groove;
+}
+
+
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+/* projects and projects h2 housed seperately from the professional skills to be aligned side by side and have different flex directions.*/
+.projects {
+    display: flex;
+    width: 40%;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: space-between;
+    font-weight: bolder;
+}
+
+.projects h2{
+    border: 10px;
+    background-color: beige;
+    background-size: fill;
+    border-style: outset;
+    align-items: center;
+}
+
+/* All #apps IDs have different background positions to best display the image linked to the content displayed upon click.  */
+#apps1 {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    border-radius: 5%;
+    background-image: url(./homelander.jpg);
+    background-size: cover;
+    background-position-x: 30%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 100px;
+    margin: 30px;
+    padding: 100px;
+    border-style: dashed;
+}
+
+#apps2 {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    border-radius: 5%;
+    background-image: url(./google.jpg);
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 100px;
+    margin: 30px;
+    padding: 100px;
+    border-style: dashed;
+}
+
+#apps3 {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    border-radius: 5%;
+    background-image: url(./money.jpg);
+    background-size: cover;
+    background-position-x: 40%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 100px;
+    margin: 30px;
+    padding: 100px;
+    border-style: dashed;
+}
+
+#apps1:hover {
+    transform: scale(1.5);
+}
+
+#apps2:hover {
+    transform: scale(1.5);
+}
+
+#apps3:hover {
+    transform: scale(1.5);
+}
+
+#button {
+    display: flex;
+    border-style: groove;
+    border-width: 5px;
+    height: 30px;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: beige;
+}
+
+
+#contactform {
+    display: flex;
+    justify-content: center;
+    width: page;
+    border-style: groove;
+    background-image: url(./background1.jpg);
+    background-size: 100%;
+    background-position-y: 75%;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+
+/* Set to expand as list of skills grows.  */
+.aside {
+    width: fit-content;
+    height: auto;
+}
+
+/* Blanket ID to style skill bubbles uniformally.  */
+#card {
+    display: flex;
+    justify-content: center;
+    border-radius: 10%;
+    background-color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    border-style: dashed;
+}
+
+#card:hover {
+    transform: scale(1.25);
+}
+
+/* ID and ID selectors to style 3 different aspects of one class.  */
+#development {
+    margin: 25px;
+    border: auto;
+    background-image: url(./background1.jpg);
+    background-size: 100%;
+    background-position-y: 75%;
+    background-position: center;
+    image-resolution: 1080px;
+    border-style: solid;
+}
+
+#development li {
+    border-style: solid;
+    border: auto;
+    margin: 5px;
+    background-color: aliceblue;
+    width: auto;
+}
+
+#development h1 {
+    border-style: solid;
+    border: auto;
+    margin: 5px;
+    background-color: rgb(206, 119, 61);
+    width: auto;
+    font-weight: bolder;
+}
